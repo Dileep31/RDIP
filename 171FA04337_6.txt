@@ -1,0 +1,45 @@
+		171FA04337  K Dileep Reddy  CSE - E   ||SET NO:6
+Aim: Creating Pubic Routing Table, associate subnet and add routing rules .
+Tools used : AWS Route Table and subnet association.
+Procedure : In AWS in resourses section ,click on VPC services
+	      ii) In VPC services click  on Route Tables.
+	     iii) click on "create route table".
+	     iv)On clicking create route table we get two text boxes,
+		1.Name Tag
+		2.VPC
+		on the name tag enter  "vignan-pub_route"
+		on the VPC enter "vpc-059f3f6e".
+	    v) click on Yes and then click on create. And then the Vignan pub route table is 	         created .
+	    vi) select  vignan pub route and then click on subnet associations
+	     vii) click on edit button .
+	     viii)Verify  hyd-pub-subnet is associated with routing table
+	    ix) click on route button and click on edit button .
+	    x) click on " add another route".
+	    xi)For Destination -> 0.0.0.0/0 For
+		Target ->select vpc-059f3f6e
+		Click on Save button
+	   xii)Verify Public route is added through internet gateway.
+	   xiii)Verify  Status column show Active
+	
+
+
+
+
+
+
+
+
+Aim: To connect windows insatnce to public subnet instance.
+Tools used:AWS EC2 Instances.
+Procedure:
+1.First locate the public IP of a public instance
+2.Click on “Connect” button
+3.Click on “Download Remote Desktop file” Click on “Get Password”
+4.Provide the path of key file
+5.Click on Choose file button Select the key file Click on Open button
+Now click on “Decrypt Password” button
+6.Verification Password is generated copy in notepad Click  on Close button
+7.Double Click on RDP fileprovide Windows Username -> Administrator Password -> “28.Y=$DEEP” 
+8.Click on “Connect” button9.Paste the password Click on OK button
+Click on Yes button
+Now you are connected to Windows Public instance
