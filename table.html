@@ -4,9 +4,24 @@
 <title>marks table</title>
 <style type="text/css">
 
-    table {outline-style: double;
-      outline-color:red;
-      background-color:lightblue}
+    table {
+    }
+    .row1
+    {
+      font-family : serif;
+      font-style : italic;
+      color : green;
+    }
+    #row3{
+      color :pink;
+      background-color:lightblue;
+      font-style:italic;
+    }
+      #row4{
+      color :orange;
+      background-color:lightblue;
+      font-style:italic;
+    }
   
 </style>
 </head>
@@ -14,21 +29,21 @@
 
 <h2>MARKS Table</h2>
 
-<table border = 1 cellpadding="1px">
-  <tr>
+<table border = 1 cellpadding="1px" cellspacing="2px">
+  <tr class = "row1">
     <th>subject</th>
     <th>marks</th>
   </tr>
-  <tr>
+  <tr class = "row1">
     <td> Compiler Design</td>
     <td>73</td>
-  </tr>
-  <tr>
+  </tr >
+  <tr id ="row3">
     <td>Distributed Systems</td>
     <td>83</td>
  
-  </tr>
-  <tr>
+  </tr >
+  <tr id="row4">
     <td>Professional ethics</td>
     <td>87</td>
 
