@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to do a global search for characters inside the brackets [h] in a string.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var name = "HYDERABAD";
+  var patt1 = /[ABCDEFGHIJKLMNOPQRSTUVWXYZ]/g;
+  var result = name.match(patt1);
+  document.getElementById("demo").innerHTML = result;
+}
+</script>
+
+</body>
+</html>
