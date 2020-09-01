@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		datatypes
+	</title>
+</head>
+<body>
+	<p id ="d1"></p><br>
+	<p id ="d2"></p>
+	<script type="text/javascript">
+		var x = [1,2,3,4,5];
+		document.getElementById("d1").innerHTML = x[3] + "<br>"+"typeof x[3]"+"  "+typeof x[3];
+		x[3] = "3";
+		document.getElementById("d2").innerHTML = x + typeof x[3];
+	</script>
+
+</body>
+</html>
