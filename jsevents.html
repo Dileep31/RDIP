@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		JS EVENTS
+	</title>
+</head>
+<body>
+	<button id = "div" onmouseover = "mOver(this)"  onclick = "document.getElementById('pd').innerHTML = Date()">click to know the time</button>
+	<p id="pd"></p>
+	<script type="text/javascript">
+		function mOver(obj){
+			obj.innerHTML = "displayed below";
+			obj.style.color = "red"
+		}
+		document.getElementById("div").addEventListener("mouseout",mouseout)
+
+		function mouseout()
+		{
+			document.getElementById("div").innerHTML="thank you";
+			document.getElementById("div").style.color ="blue";
+		}
+	</script>
+
+</body>
+</html>
