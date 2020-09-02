@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		control flow
+
+	</title>
+</head>
+<body>
+	
+	<script type="text/javascript">
+	function range ()
+	{
+		var x = document.getElementById("mynumber").value;
+		//console.log(x)
+		if( x>10 && x<=100)
+		{
+			document.getElementById("p1").innerHTML = "the number is between 10 and 100";
+		}
+		else
+		{
+			document.getElementById("p1").innerHTML = "the number is out of range";
+
+		}
+	}
+	 function myFunction() 
+	{
+    var n = document.getElementById("mynumber1").value;
+    document.getElementById("p2").innerHTML = fibonacciGenerator (n);
+	}
+
+	var sequence = [0]; // sequence = []; if you want sequence [1] = 1;
+	var previousNumber = 1;
+	var presentNumber = 0;
+	var sum = 0;
+ 
+function fibonacciGenerator (n) {
+  
+    while (sequence.length < n) {
+     sum = previousNumber + presentNumber;
+     previousNumber = presentNumber;
+     presentNumber = sum;
+     sequence.push(sum);
+     
+    }
+    return (sequence);
+}
+		
+		
+
+	</script>
+	<p id="p1"></p>
+	<p id ="p2"></p>
+	<h3>enter any number </h3>
+	<input type = "number" id = "mynumber" value ="">
+	<button onclick="range()" >click here to check number </button>
+	<br><br>
+	<h3> eneter the range of fibonacci </h3>
+
+	<input type = "number" id = "mynumber1" value = "0"><br><br><br>
+	<button onclick = "myFunction()">fibonacci</button>
+</body>
+</html>
