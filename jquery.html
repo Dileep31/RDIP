@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    hide,show
+  </title>
+  <style type="text/css">
+
+  </style>
+      <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+</head>
+<body>
+  <button id = "b1">auto hiding with duration : 1000 milliseconds</button>
+  <br>
+  <br>
+  <br>
+  <!--<button id = "b2">click me to shiw the hidden button</button> -->
+   <div > 
+    <br>
+    <br>
+    <br><br>
+
+    <button id = "button2">click me to hide/show('hidden')  button </button>
+    <button id = "button1">sample</button>
+    </div>
+    <script >
+      $("#b1").hide(10000);
+
+       
+      $(document).ready(function(){
+        $('#button2').on('click',function(){
+           $('#button1').toggle(4000);
+        });
+
+              });
+      
+
+     /*$('#button2').onclick(fun(){
+        $('#button1').show();
+      });*/
+    </script>
+</body>
+</html>
