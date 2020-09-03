@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String Properties</h2>
+
+<p>This returns the 5th 7th and 10th word from HTML description:</p>
+<h2> Description of HTML </h2>
+<p>"Image result for html description Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. ... HTML describes the structure of a web page semantically and originally included cues for the appearance of the document. HTML elements are the building blocks of HTML pages."</p>
+<p id="demo"></p>
+
+<script>
+var txt = "Image result for html description Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. ... HTML describes the structure of a web page semantically and originally included cues for the appearance of the document. HTML elements are the building blocks of HTML pages.";
+
+document.getElementById("demo").innerHTML = "5th word  ="+txt.slice(22,34)+"7th word ="+txt.slice(44,52)+ "  "+"10th word ="+txt.slice(70,74);
+</script>
+
+</body>
+</html>
