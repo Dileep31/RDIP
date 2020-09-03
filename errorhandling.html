@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Error Handling
+	</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function myFun()
+		{
+		var sum = 0;
+		var x = document.getElementById("demo").value;
+		try{
+		
+		
+		for (i = 0 ;i < x.len ;i++)
+		{
+			sum =sum + x[i];
+		}
+		document.getElementById("pid").innerHTML = "the sum of array is "+sum;
+		}
+		catch(err)
+		{
+			document.getElementById("pid").innerHTML = err;
+		}
+		finally
+		{
+			document.getElementById("demo") = "";
+		}
+	</script>
+	<h1> input a array to find its sum </h1>
+	<input type="text" id="demo">
+
+	<button onclick="myFun()">click me </button>
+	<p id ="pid" ></p>
+	<p id = "pid2"></p>
+</body>
+</html>
